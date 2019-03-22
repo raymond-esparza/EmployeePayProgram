@@ -1,7 +1,8 @@
 /*
-Program: Employee Pay Program
+Raymond Esparza
+Section #2
+
 File: person.h
-Author: Raymond Esparza
 
 This file is indended to be included in an accompanying person.cpp file. This
 file contains a class declaration for Person in the inhereting files.
@@ -14,9 +15,9 @@ using namespace std;
 
 class Person {
 	public:
-		Person(){};
-		void setFirstName(string first_Name);
-		void setLastName(string last_Name);
+		Person(string firstName, string lastName, float rate, float hours);
+		void setFirstName(string fName);
+		void setLastName(string lName);
 		void setPayRate(float rate);
 		void setHoursWorked(float hours);
 		string fullname();
@@ -28,8 +29,8 @@ class Person {
 
 
 	private:
-		string lastname;
-		string firstname;
+		string lastName;
+		string firstName;
 		float payRate;
 		float hoursWorked;
 };
